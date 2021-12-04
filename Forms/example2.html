@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form</title>
+</head>
+<body>
+<form action="http:/utkarshsharmaanurag.pythonanywhere.com" method="post">
+<fieldset>
+	<legend>Your Details</legend>
+	<label>Name:<input type="text" name="name" required="required"></label><br>
+	<label>Email:<input type="email" name="email" required="required"></label>
+</fieldset>
+<fieldset>
+	<legend>Your Review</legend>
+	<label>How did your hear about us:
+		<select name="referrer"  required="required">
+		<option value="Google">Google</option>
+		<option value="Friend">Friends</option>
+		<option value="Advert">Advert</option>
+		<option value="Others">Others</option>
+	</select>
+	</label>
+	<br>
+	<br>
+	<label>Would you like to visit again:
+		<input type="radio" name="rating" value="yes" checked="checked">Yes</label>
+		<input type="radio" name="rating" value="No">No</label>
+		<input type="radio" name="rating" value="Maybe">Maybe
+	</label>
+	<br>
+	<br>
+	
+	<label>
+		Comments:
+		<br>
+		<textarea name="commments" cols="20" rows="4">Enter your comments here...</textarea>
+	</label>
+	<br>
+	<label>
+		<input type="checkbox" name="subscribe" checked="checked">
+		Sign me up for email adress
+	</label>
+	<br>
+	<br>
+
+	<input type="Submit" value="submit review">
+</fieldset>
+</form>
+</body>
+</html>

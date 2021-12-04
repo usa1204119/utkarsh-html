@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Conditional Statements</title>
+	<script language="javascript">
+	function check()
+		{
+			var age;
+			age=form1.t1.value;
+			if(age>=18)
+				alert("Qualifies for driving");
+			else
+				alert("Does not Qualifies for driving")
+		}
+	</script>
+</head>
+<body bgcolor="black" text="red">
+<h1>To check weather your qualified for driving</h1>
+<form name="form1">
+<center>
+	Enter your age:-
+	<input type="text" name="t1"><br><br>
+	<input type="button" value="Submit" onclick="check()">
+</form>
+</body>
+</html>
